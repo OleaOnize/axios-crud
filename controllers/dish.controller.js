@@ -8,3 +8,12 @@ module.exports.list = (req, res, next) => {
       })
       .catch(err => next(err))
   }
+
+  module.exports.doDelete = (req, res, next) => {
+    menuService.deleteDish(req.params.id)
+    .then((response) => {
+        res.redirect('/dishes')
+      })
+      .catch(err => next(err))
+    }
+  

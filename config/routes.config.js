@@ -6,6 +6,7 @@ router.get("/", (req, res, next) => res.render("home"))
 // Dishes
 
 router.get("/dishes", dishController.list)
+router.post("/dishes/:id/delete", dishController.doDelete)
 
 
 
