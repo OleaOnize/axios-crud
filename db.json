@@ -1,0 +1,34 @@
+{
+  "dishes": [
+    {
+      "id": 1,
+      "name": "Huevos rotos",
+      "type": "Compartir"
+    },
+    {
+      "id": 2,
+      "name": "Croquetas",
+      "type": "Compartir"
+    },
+    {
+      "id": 3,
+      "name": "Patatas Bravas",
+      "type": "Compartir"
+    },
+    {
+      "id": 4,
+      "name": "Chuletón",
+      "type": "Principal"
+    },
+    {
+      "id": 5,
+      "name": "Merluza",
+      "type": "Principal"
+    },
+    {
+      "name": "Costillas",
+      "type": "Principal",
+      "id": 6
+    }
+  ]
+}
