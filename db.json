@@ -1,16 +1,6 @@
 {
   "dishes": [
     {
-      "id": 1,
-      "name": "Huevos rotos",
-      "type": "Compartir"
-    },
-    {
-      "id": 2,
-      "name": "Croquetas",
-      "type": "Compartir"
-    },
-    {
       "id": 3,
       "name": "Patatas Bravas",
       "type": "Compartir"

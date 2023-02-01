@@ -1,15 +1,18 @@
 <h1>Dishes</h1>
-<div class="container">
+<div class="container ">
     <div class="row gy-4 pb-4">
         {{#each dishes}}
-        <div class="col-6">
+        <div class="col-6" id="dish-{{this.id}}">
             <div class="custom-card m-3">
                 <h2>{{name}}</h2>
                 <p>{{type}}</p>
                 <div class="p-3">
-                    <form action="/dishes/{{this.id}}/delete" method="post">
-                        <button type="submit" class="delete-dish-btn btn btn-danger">Delete</a>
-                    </form>
+                    <form action="/dishes/{{id}}/delete" method="POST"> 
+                    
+                    <button type="submit" value="{{this.id}}" class="delete-btn btn btn-danger">
+                        Delete 
+                    </button>
+                    </form> 
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    const deleteButtons = document.querySelectorAll(".delete-dish-btn")
+    const deleteButtons = document.querySelectorAll(".delete-btn")
   
     const deleteDish = (url, dishCointainer) => {
       axios.delete(url)
@@ -17,10 +17,30 @@ window.addEventListener('load', () => {
     }
   
     deleteButtons.forEach(button => {
-      const { id } = button.dataset;
-      const url = `http://localhost:3000/dishes`
+      const { id } = button.dataset;  //PREGUNTAR ESTO--------------------------------------------------------------------------
+      const url = `http://localhost:8000/dishes/${id}`
       const dishCointainer = button.parentElement.parentElement.parentElement
   
       button.addEventListener('click', () => deleteDish(url, dishCointainer))
     })
   })
+
+// const httpClient = axios.create({
+//     baseURL: 'http://localhost:8000/dishes'
+//   })
+  
+//   const deleteDish = (dishId) => http.delete(`/dishes/${dishId}`)
+//     .then(() => {
+//       document.getElementById(`dish-${id}`).remove()
+//     })
+//     .catch(err => console.error(err))
+  
+//   document.querySelectorAll('.delete-btn').forEach(btn => {
+//     btn.onclick = (event) => {
+//       btn.classList.add('disabled')
+//       deleteDish(event.target.value)
+//     }
+//   })
+
+
+  
