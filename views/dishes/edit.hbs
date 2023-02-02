@@ -1,0 +1,15 @@
+<H1>EDIT THE DISH {{dishes.name}}</H1>
+
+<form action="/dishes/{{dishes.id}}" method="post"> <!-- Importante .id -> :id -->
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input value="{{dishes.name}}"name="name" type="text" class="form-control" id="name">
+  </div>
+
+  <select name="type" class="form-select mb-3">
+    <option selected value="Principal">Principal</option>
+    <option value="Compartir">Compartir</option>
+  </select>
+
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>

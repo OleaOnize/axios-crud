@@ -3,7 +3,7 @@
     {
       "id": 3,
       "name": "Patatas Bravas",
-      "type": "Compartir"
+      "type": "Principal"
     },
     {
       "id": 4,
@@ -16,8 +16,8 @@
       "type": "Principal"
     },
     {
-      "name": "Costillas",
-      "type": "Principal",
+      "name": "COCRETAS",
+      "type": "Compartir",
       "id": 6
     }
   ]

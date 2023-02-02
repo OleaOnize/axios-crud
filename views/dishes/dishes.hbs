@@ -1,21 +1,29 @@
+<div class="dishes-main">
 <h1>Dishes</h1>
+<a href="/dishes/create">Create a new dish</a>
+</div>
 <div class="container ">
-    <div class="row gy-4 pb-4">
+    <div class="row gy-4 pb-4 m-3">
         {{#each dishes}}
-        <div class="col-6" id="dish-{{this.id}}">
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" id="dish-{{this.id}}">
             <div class="custom-card m-3">
-                <h2>{{name}}</h2>
-                <p>{{type}}</p>
-                <div class="p-3">
-                    <form action="/dishes/{{id}}/delete" method="POST"> 
-                    
-                    <button type="submit" value="{{this.id}}" class="delete-btn btn btn-danger">
-                        Delete 
-                    </button>
-                    </form> 
+                <h2 class="custom-card-content-name">{{name}}</h2>
+                <p class="custom-card-content-type">{{type}}</p>
+                <div class="p-3 custom-card-btn" >
+                    <form action="/dishes/{{id}}/delete" method="POST">
+                        <button type="submit" value="{{this.id}}" class="delete-btn btn btn-danger">
+                            Delete
+                        </button>
+                    </form>
+                    <form action="/dishes/{{id}}/edit" method="GET">
+                        <button type="submit" value="{{this.id}}" class="edit-btn btn btn-info mt-2">
+                            Edit
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
         {{/each}}
     </div>
 </div>
+

@@ -1,0 +1,15 @@
+<H1>CREATE A NEW DISH</H1>
+
+<form action="/dishes/create" method="post">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input name="name" type="text" class="form-control" id="name">
+  </div>
+
+  <select name="type" class="form-select mb-3">
+    <option selected value="Principal">Principal</option>
+    <option value="Compartir">Compartir</option>
+  </select>
+
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
